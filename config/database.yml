@@ -1,0 +1,20 @@
+defaults: &default
+  adapter: mysql2
+  database: <%= ENV['MYSQL_DATABASE'] %>
+  pool: 5
+  host: <%= ENV['MYSQL_SERVER'] %>
+  port: <%= ENV['MYSQL_PORT'] || 3306 %>
+  username: <%= ENV['MYSQL_USER'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+staging:
+  <<: *default
+
+production:
+  <<: *default

@@ -1,0 +1,19 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    dotenv (2.2.1)
+    jdbc-jtds (1.2.5)
+    jdbc-jtds (1.2.5-java)
+    jdbc-mysql (5.1.13)
+
+PLATFORMS
+  java
+  ruby
+
+DEPENDENCIES
+  dotenv
+  jdbc-jtds
+  jdbc-mysql
+
+BUNDLED WITH
+   1.16.0
