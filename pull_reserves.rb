@@ -87,7 +87,7 @@ raise Exception.new("Can't find database details for '#{options.environment}' in
 app_jdbc_conn = java.sql.DriverManager.get_connection("jdbc:mysql://#{local_db["host"]}:#{local_db["port"]}/#{local_db["database"]}", local_db["username"], local_db["password"])
 app_jdbc_stmt = app_jdbc_conn.create_statement
 
-horizon_jdbc_conn = java.sql.DriverManager.get_connection("jdbc:jtds:sybase://#{horizon_db["host"]}:#{horizon_db["port"]}/#{horizon_db["database"]}", horizon_db["login"], horizon_db["password"])
+horizon_jdbc_conn = java.sql.DriverManager.get_connection("jdbc:jtds:sybase://#{horizon_db["host"]}:#{horizon_db["port"]}/#{horizon_db["db_name"]}", horizon_db["login"], horizon_db["password"])
 horizon_jdbc_stmt = horizon_jdbc_conn.create_statement
 
 
