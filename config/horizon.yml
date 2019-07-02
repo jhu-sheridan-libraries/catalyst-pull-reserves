@@ -1,10 +1,10 @@
 defaults: &default
   host: <%= ENV['HORIZON_DB_HOST'] %>
-  port: <%= ENV['HORIZON_DB_PORT'] || '2025' %>
+  port: <%= ENV['HORIZON_DB_PORT'] || '1433' %>
   db_name: <%= ENV['HORIZON_DB_NAME'] %>
   login: <%= ENV['HORIZON_LOGIN'] %>
   password: <%= ENV['HORIZON_PASSWORD'] %>
-  jdbcType: DS-Sybase
+  jdbcType: sqlserver  # sybase 
 
 development:
   <<: *default
@@ -19,4 +19,3 @@ staging:
 
 production:
   <<: *default
-
