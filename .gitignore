@@ -30,5 +30,6 @@
 log/*.log
 
 .ruby-version
+.java-version
 .ruby-gemset
 .idea
