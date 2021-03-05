@@ -14,6 +14,3 @@ DEPENDENCIES
   dotenv
   jdbc-jtds
   jdbc-mysql
-
-BUNDLED WITH
-   1.16.0
